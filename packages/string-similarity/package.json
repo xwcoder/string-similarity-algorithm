@@ -1,0 +1,45 @@
+{
+  "name": "string-similarity-algorithm",
+  "version": "1.0.0",
+  "description": "A lib to compare similarity of two strings",
+  "keywords": [
+    "string similarity",
+    "edit distance",
+    "levenshtein",
+    "levenshtein distance",
+    "lcs",
+    "longest common subsequence",
+    "simhash",
+    "hamming distance"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./lib",
+    "build": "../../node_modules/typescript/bin/tsc",
+    "dev": "../../node_modules/typescript/bin/tsc -w",
+    "lint": "../../node_modules/tslint/bin/tslint -p ./ -e '**/*.json'",
+    "pretest": "../../node_modules/jest/bin/jest.js --clearCache",
+    "test": "../../node_modules/jest/bin/jest.js"
+  },
+  "files": [
+    "lib/*",
+    "package.json",
+    "README.md"
+  ],
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "author": {
+    "name": "creep",
+    "email": "creep.wei@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xwcoder/string-similarity-algorithm.git"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "jenkins-hash-lookup3": "^0.0.0"
+  }
+}

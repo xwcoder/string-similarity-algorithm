@@ -1,0 +1,33 @@
+{
+  "name": "jenkins-hash-lookup3",
+  "version": "0.0.0",
+  "description": "A implementation of jenkins hash functions",
+  "keywords": ["jenkins hash", "lookup", "lookup3", "hashlittle", "hashword"],
+  "main": "./lib/index.js",
+  "scripts": {
+    "prebuild": "rm -rf ./lib",
+    "build": "../../node_modules/typescript/bin/tsc",
+    "dev": "../../node_modules/typescript/bin/tsc -w",
+    "lint": "../../node_modules/tslint/bin/tslint -p ./ -e '**/*.json'",
+    "pretest": "../../node_modules/jest/bin/jest.js --clearCache",
+    "test": "../../node_modules/jest/bin/jest.js"
+  },
+  "files": [
+    "lib/*",
+    "package.json",
+    "README.md"
+  ],
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "author": {
+    "name": "creep",
+    "email": "creep.wei@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xwcoder/string-similarity-algorithm.git"
+  },
+  "license": "ISC"
+}

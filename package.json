@@ -1,38 +1,12 @@
 {
   "name": "string-similarity-algorithm",
-  "version": "1.0.0",
-  "description": "string similarity, edit distance, levenshtein, levenshtein distance, lcs, longest common subsequence",
-  "main": "./lib/index.js",
-  "scripts": {
-    "prebuild": "rm -rf ./lib",
-    "build": "tsc",
-    "dev": "tsc -w",
-    "lint": "tslint --project tsconfig.json",
-    "pretest": "jest --clearCache",
-    "test": "jest --verbose"
-  },
-  "files": [
-    "lib/*",
-    "package.json",
-    "README.md"
-  ],
-  "pre-commit": [
-    "lint",
-    "test"
-  ],
-  "author": {
-    "name": "creep",
-    "email": "creep.wei@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/xwcoder/string-similarity-algorithm.git"
-  },
+  "private": true,
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.8",
     "@types/node": "^11.9.5",
     "jest": "^24.1.0",
+    "lerna": "^3.13.0",
     "pre-commit": "^1.2.2",
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.0",
