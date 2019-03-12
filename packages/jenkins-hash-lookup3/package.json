@@ -1,8 +1,14 @@
 {
   "name": "jenkins-hash-lookup3",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A implementation of jenkins hash functions",
-  "keywords": ["jenkins hash", "lookup", "lookup3", "hashlittle", "hashword"],
+  "keywords": [
+    "jenkins hash",
+    "lookup",
+    "lookup3",
+    "hashlittle",
+    "hashword"
+  ],
   "main": "./lib/index.js",
   "scripts": {
     "prebuild": "rm -rf ./lib",

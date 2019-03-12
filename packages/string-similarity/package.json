@@ -1,6 +1,6 @@
 {
   "name": "string-similarity-algorithm",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A lib to compare similarity of two strings",
   "keywords": [
     "string similarity",
@@ -40,6 +40,6 @@
   },
   "license": "ISC",
   "dependencies": {
-    "jenkins-hash-lookup3": "^0.0.0"
+    "jenkins-hash-lookup3": "^1.0.0"
   }
 }
